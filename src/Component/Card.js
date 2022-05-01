@@ -1,0 +1,11 @@
+// this is wrapper component
+
+import React from 'react'
+
+export default function Card(props) {
+    // console.log(props);
+    const classes='card '+props.className;
+  return (
+    <div className={classes}>{props.children}</div>
+  )
+}
